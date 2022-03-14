@@ -9,8 +9,8 @@ app.get('/',(req,resp) => {
     resp.json({message:'Call /users to get all the users'});
 })
 
-app.get('/users',(req,response) => {
-    response.json({users});
+app.get('/users',(req,resp) => {
+    resp.json({users});
 })
 
 app.listen(PORT,() => console.log('server running at ',PORT));
