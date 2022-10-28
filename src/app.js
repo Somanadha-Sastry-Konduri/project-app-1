@@ -10,7 +10,7 @@ app.get('/',(req,resp) => {
 })
 
 app.get('/users',(req,resp) => {
-    resp.json({users});
+    response.json({users});
 })
 
 app.listen(PORT,() => console.log('server running at ',PORT));
